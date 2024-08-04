@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            background-color: rgb(17, 94, 165);
+            height: 60px;
+        }
+        .logo{
+            float: left;
+            width: 40px;
+            padding: 10px;
+        }
+        .vit{
+            padding: 10px;
+            color: white;
+            float: left;
+            font-size: 34px;
+        }
+        .vc{
+            padding: 21px;
+            color: white;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        section{
+            padding: 10px;
+        }
+        .l1{
+            color: #2d62a9;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 28px;
+            padding: 5px;
+            font-weight: 600;
+        }
+        .desc{
+            padding: 10px;
+            padding-left: 15%;
+            padding-right: 15%;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+        }
+        .choices{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .Student{
+            margin-left: auto;
+            margin-right: auto;
+            width: 220px;
+            height: 85px;
+            padding-left: 55px;
+            border-top-width:3px;
+            border-top-style:solid;
+            border-top-color:#2d62a9;
+            border-radius: 5%;
+            box-shadow: 4px 4px rgb(230, 227, 227);
+            text-decoration: none;
+        }
+        .StudentLogo{
+            float: left;
+            padding-top: 15px;
+            width:50px;
+        }
+        .title1{
+            padding-left: 110px;
+            padding-top: 10px;
+            color: #2d62a9;
+            font-size: large;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .button1{
+            padding-top: 5px ;
+            padding-left: 70px;
+            width: 45px;
+        }
+        .Employee{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 55px;
+            width: 220px;
+            height: 85px;
+            border-top-width:3px;
+            border-top-style:solid;
+            border-top-color:rgb(193, 145, 22);
+            border-radius: 5%;
+            box-shadow: 4px 4px rgb(230, 227, 227);
+            text-decoration: none;
+        }
+        .EmployeeLogo{
+            float: left;
+            padding-top: 15px;
+            width:50px;
+        }
+        .title2{
+            padding-left: 100px;
+            padding-top: 10px;
+            color:rgb(193, 145, 22);
+            font-size: large;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .button2{
+            padding-top: 5px ;
+            padding-left: 70px;
+            width: 42px;
+        }
+        .Parent{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 55px;
+            width: 220px;
+            height: 85px;
+            border-top-width:3px;
+            border-top-style:solid;
+            border-top-color:rgb(6, 159, 6);
+            border-radius: 5%;
+            box-shadow: 4px 4px rgb(230, 227, 227);
+            text-decoration: none;
+        }
+        .ParentLogo{
+            float: left;
+            padding-top: 15px;
+            width:50px;
+        }
+        .title3{
+            padding-left: 114px;
+            padding-top: 10px;
+            color: rgb(6, 159, 6);
+            font-size: large;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .button3{
+            padding-top: 5px ;
+            padding-left: 70px;
+            width: 45px;
+        }
+        .Alumni{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 55px;
+            width: 220px;
+            height: 85px;
+            border-top-width:3px;
+            border-top-style:solid;
+            border-top-color:#39a3db;
+            border-radius: 5%;
+            box-shadow: 4px 4px rgb(230, 227, 227);
+            text-decoration: none;
+        }
+        .AlumniLogo{
+            float: left;
+            padding-top: 15px;
+            width:50px;
+        }
+        .title4{
+            padding-left: 110px;
+            padding-top: 10px;
+            color: rgb(9, 204, 248);
+            font-size: large;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .button4{
+            padding-top: 5px ;
+            padding-left: 70px;
+            width: 45px;
+        }
+        .section3{
+            margin-top: 25px;
+            margin-left: 25px;
+            border-radius: 1%;
+            border-top: rgb(100, 1, 1) solid 3px ;
+            width: 45%;
+            float: left;
+            box-shadow: 4px 4px rgb(230, 227, 227)
+        }
+        .sec3{
+            background-color: rgb(244, 243, 243);
+            padding: 5px;
+            font-family: sans-serif;
+        }
+        ul{
+            margin: 20px;
+            padding-left: 30px;
+            list-style-image: url("/bullet.png");
+        }
+        .Spotlight{
+            text-align: left;
+            font-size:medium;
+            float:left;
+            color: maroon;
+        }
+        hr{
+            width: 100%;
+        }
+        .more{
+            text-align: right;
+            color: maroon;
+            font-weight: 100;
+        }
+        .link{
+            float: right;
+            margin: 25px;
+        }
+        .download{
+            width: 80%;
+        }
+        .link2{
+            color: black;
+            text-decoration: solid black underline;
+            font-size: smaller;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .link2:hover{
+            text-decoration: none;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            background-color: rgb(17, 94, 165);
+            height:auto;
+            padding-top:4px;
+            width: 100%;
+            color: white;
+            font-size: small;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class= "logo" src="https://vtop.vit.ac.in/vtop/assets/img/VITLogoEmblem.png" alt="VIT logo" >
+            <h1 class="vit">VIT</h1>
+            <div class="vc">(Vellore Campus)</div>
+        </div>
+    </header>
+    
+    <section>
+        <div class="l1">VTOP translates to "VIT on TOP"</div>
+        <div class="desc">A digital initiative by the institute facilitating Faculty, Staff, Students, Parents and Alumni to access and process Academics, Research, Supporting services at one common platform.</div>
+    </section>
+    
+    <div class="choices">
+        <a class="Student" href="https://vtop.vit.ac.in/vtop/open/page">
+            <div>
+                <img class="StudentLogo" src="https://vtop.vit.ac.in/vtop/assets/img/students.png" alt="logo">
+                <div class="title1">Student</div>
+                <img class="button1" src="http://127.0.0.1:5500/Student.png" alt="logo">
+            </div>
+        </a> 
+
+        <a class="Employee" href="https://vtop.vit.ac.in/vtop/open/page">
+            <div>
+                <img class="EmployeeLogo" src="https://vtop.vit.ac.in/vtop/assets/img/employee.png" alt="logo">
+                <div class="title2">Employee</div>
+                <img class="button2" src="/Yellow.png" alt="logo">
+            </div>
+        </a>
+        
+        <a class="Parent" href="https://vtop.vit.ac.in/vtop/open/page">
+            <div>
+                <img class="ParentLogo" src="https://vtop.vit.ac.in/vtop/assets/img/parent.png" alt="logo">
+                <div class="title3">Parent</div>
+                <img class="button3" src="/green.png" alt="logo">
+            </div>
+        </a>
+        
+        <a class="Alumni" href="https://vtop.vit.ac.in/vtop/open/page"> 
+            <div>
+                <img class="AlumniLogo" src="https://vtop.vit.ac.in/vtop/assets/img/alumni.png" alt="logo">
+                <div class="title4">Alumni</div>
+                <img class="button4" src="/Cyan.png" alt="logo">
+            </div>
+        </a>  
+    </div>
+    
+    <div>
+        <div class="section3">
+            <div class="sec3">
+                <h4 class="Spotlight">Spotlight</h4>
+                <h4 class="more">More ...</h4>
+            </div>
+        
+            <ul>
+                <h5>
+                <li><a class="link2" href="https://vtop.vit.ac.in/vtop/open/page">VIT CAMPUS MAP</a></li>
+                <br>
+                <hr>
+                <li><a class="link2" href="https://vtop.vit.ac.in/vtop/open/page">39TH ANNUAL CONVOCATION - RANK LIST</a></li>
+                <br>
+                <hr>
+                <li><a class="link2" href="https://vtop.vit.ac.in/vtop/open/page">39TH ANNUAL CONVOCATION - INSTRUCTION MANUAL</a></li>
+                <br>
+                <hr>
+                <li><a class="link2" href="https://vtop.vit.ac.in/vtop/open/page">HOSTEL VACATING CONSENT FORM AFTER COMPLETION OF THE COURSE</a></li>
+                <br>
+                <hr>
+                <li><a class="link2" href="https://vtop.vit.ac.in/vtop/open/page">HOSTEL ADMISSION REQUEST FORM FOR DAY SCHOLARS</a></li>
+                <br>
+                <hr>
+                </h5>
+            </ul>
+        </div>
+        <div class="link">
+            <img class="download" src="/click.png" alt="Click">
+        </div>
+    </div>
+    <footer>
+        Copyright © 2024 Software Development Cell, VIT, Vellore-632 014.
+    </footer>
+</body>
+</html>
